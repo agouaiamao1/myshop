@@ -1,0 +1,220 @@
+</head>
+<body>
+	<!-- 乐淘头部开始 -->
+   <div id="blank"></div>
+   <div id="lt_top">
+   	 <div class="lttop">
+         <ul class="lt_brand">
+           <li class="ltcur"></li>
+         </ul>
+         <div class="letaomenu">
+        <if value="isset($_SESSION['name']) && isset($_SESSION['uid'])">
+           欢迎您！<a id="ltlogin" style="color:#E61C3C" href="{|U('Member/Member/pcenter')}">{$hd.session.name}</a>
+           |<a id="ltregister"  class="register" style="color:#E61C3C" href="{|U('Login/out')}">退出</a>
+       <else/>
+           <a id="ltlogin" style="color:#E61C3C" href="{|U('Login/login')}">请登录</a>
+           <i>|</i>
+           <a id="ltregister"  class="register" style="color:#E61C3C" href="{|U('Login/register')}">免费注册</a>
+
+       </if>
+           <div style="display:inline;position:relative" class="lt_top_box">
+              <a id="fnMyLetao2" class="down" href="##">我的乐淘</a>
+              <div class="mytao_d mytao1" style="display:none;z-index: 999999;">
+                <em>shiyan_xiaobin</em>
+                <ul>
+                  <li><a href="##">我的订单</a></li>
+                  <li><a href="##">商品评价</a></li>
+                  <li><a href="##">咨询回复</a></li>
+                  <li class="noline"><a href="##">我的优惠券</a></li>
+                </ul>
+                <ul class="middleline"></ul>
+                  <ul>
+                    <li><a href="##">申请售后服务</a></li>
+                    <li><a href="##">修改密码</a></li>
+                    <li><a href="##">收货地址</a></li>
+                    <li class="noline"><a href="##">鞋码换算</a></li>
+                  </ul>                
+              </div>
+           </div>
+           <i>|</i>
+           <div style="display:inline;position:relative" class="lt_top_box">
+              <a id="fnHistory2" class="down" href="javascript:void(0);">浏览记录</a>
+              <div class="loading mytao1" style="position:absolute;display:none;z-index: 999999;">
+              <h2>最近浏览的类目：</h2>
+              <ul>
+                <li>
+                  <a href="##"><i>1.</i><em>凉拖</em><b>(7)</b></a>
+                </li>
+              </ul>
+              <h2>最近浏览的商品：</h2>
+              <div style="padding:0 12px">
+                <a href="##"><img src="__ROOT__/Public/images/451743024_3.jpg" alt="" /></a>
+              </div>
+              </div>
+            </div>
+           <i>|</i>
+           <div style="display:inline;position:relative" class="lt_top_box">
+              <a id="fnMessage2" class="down" href="javascript:void(0);">消息中心</a>
+              <div id="ddl_Message" class="ddl mytao1"  style="display:none">
+                <a href="##">查看最新公告<b>(0)</b></a>
+                <a href="##">查看订单提醒<b>(0)</b></a>
+                <a href="##">查看评价提醒<b>(0)</b></a>
+              </div>
+            </div>
+           <i>|</i>
+           <a id="lnkmobile" class="mobile" style="color:#000" title="手机乐淘" href="##"><i> </i>手机乐淘</a>
+         </div>
+     </div>
+   </div>
+   <!-- 乐淘头部结束 -->
+   <!-- 乐淘头部中间搜索部分 -->
+   <div id="lt_search">
+   	  <div class="ltsearch">
+        <a href="{|U('Index/index')}" target="_blank"><img src="__ROOT__/Public/images/lt_logo.gif" alt="" /></a>
+        <a href="{|U('Index/index')}" class="sdf"><img src="__ROOT__/Public/images/lt_logo1.gif" alt="" /></a>
+        <div id="ltsearch">
+          <div>
+            <input type="text" id="iptsearch" />
+            <em id="btnsearch" class=""></em>
+            <br style="clear:both;height:0;float:none" />
+          </div>
+        </div>
+        <div id="ltotherinfo">
+          <a href="##" class="tian1"></a>
+          <a href="##" class="tian2"></a>
+        </div>
+        <div style="clear:both;height:0;float:none"></div>
+      </div>
+   </div>
+   <!-- 乐淘头部中间搜索结束 -->
+   
+   <!-- 乐淘头部最后菜单 -->
+   <div id="lt_nav">
+     <div class="ltnav">
+       <ul>
+        <!-- hover -->
+         <li class="first">
+           <a class="le f" href="##">首页</a>
+         </li>
+       <list from="$category" name="c"> 
+         <li class="ceshi">
+           <a class="sub le" href="{|U:'Index/Index/category'}">{$c.cname}</a>        
+            <div class="letao_cmf" style="display: none;">
+            <div class="letao_info">         
+             <dl>
+                <dt>款式:</dt> 
+                <dd>
+                 <list from='$c._data' name='d'>                 
+                  <a href="{|U:'Index/Index/category',array('cid'=>$d['cid'])}">{$d.cname}</a>
+                 </list>
+                 </dd>
+              </dl>
+              <if value="$c.cname eq '女鞋'">
+                <dl>
+                <dt>跟款:</dt>
+                <dd>
+                  <list from="$attr1" name="a">
+                  <a href="{|U:'Index/Index/cate_spec',array('avid'=>$a['avid'])}">{$a.attrvalue}</a>
+                </list>
+                </dd>
+              </dl>
+              </if>
+              <dl>
+                <dt >热门推荐:</dt>
+                <dd>
+                  <a href="##">春款女鞋</a>
+                  <a href="##">尖头鞋</a>
+                  <a href="##">婚宴鞋</a>
+                  <a href="##">铆钉鞋</a>
+                  <a href="##">水晶鞋</a>
+                  <a href="##">防水台</a>
+                  <a href="##">超轻底</a>
+                  <a href="##">复古风</a>
+                </dd>
+              </dl>    
+            <div style="clear:both;height:0;float:none"></div>
+          </div>
+         </div>         
+       </li>
+    </list>
+     </ul>
+
+   <!-- 乐淘头部最后菜单结束 -->
+   <!-- 购物车部分开始 -->
+     
+     <div id="lt_car">
+        <div class="lt_car_d">
+          <em></em>
+          <a href="##" class="ltcar_num">
+            购物车
+            <i>2</i>
+          </a>
+          <a href="##" class="ltcar_jiesuan"></a>
+        </div>
+        <div class="lt_shopcar">
+          <div class="lt_sh_uid">我的购物车</div>
+          <div class="sss">
+            <table class="lt_car_tab">
+              <thead>
+                <tr>
+                  <td class="prod_image"></td>
+                  <td class="prod_name"></td>
+                  <td class="prod_count"></td>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td class="prod_image">
+                      <a href="##"><img src="__ROOT__/Public/images/947749585_3.jpg" alt="" /></a>
+                    </td>
+                    <td class="prod_name">
+                      <a href="##">潮流 透气 C+ 斯迦 英雄季•蜘蛛侠系列 男士潮流新款时尚休闲经 尺码:40</a>
+                    </td>
+                    <td>
+                      <span class="tly_prodadd" title="商品数量+1"></span>
+                      <span class="tly_prodnum">1</span>
+                      <span class="tly_prodsubstract" title="删除此商品"></span>
+                    </td>
+                  </tr>
+                  <tr class="prod_price">
+                     <td style="vertical-align:top;text-align:left"></td>
+                     <td style="text-align:left">
+                      专柜价：399元    乐淘价：<i>239元</i>
+                     </td>
+                     <td style="text-align:right">
+                       [<a href="javascript:void(0);">移入收藏夹</a>]
+                     </td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="prodtotal" style="height:18px;line-height:18px;padding-top:18px;text-align:right" colspan="3">
+                   <input id="hid_prod_count" type="hidden" value="2">数量总计：2件   商品总额：
+                    <strong>488.00元</strong> 
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align:right" colspan="3">应付商品金额:<i class="ltbigprice">488.00元</i></td>
+                </tr>
+                <tr>
+                  <td class="prodtotal" style="padding-bottom:12px;text-align:right" colspan="3">
+                  <a class="btn_clear" href="javascript:void(0);">清空购物车</a>
+                  <a target="_blank" href="##">
+                      <img class="btn_toorder" style="width:90px;height:25px" alt="" src="__ROOT__/Public/images/sc_buy5.gif">
+                  </a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+     </div>
+     <!-- 购物车部分结束-->
+     </div>
+   </div>
+   <!-- 乐淘头部最后菜单结束 -->
+   <!--[if IE666]>
+  <script>
+      alert("Please update your browser version!")
+  </script>
+  <![endif]-->

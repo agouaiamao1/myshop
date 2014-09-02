@@ -1,0 +1,915 @@
+body{
+	background:#fff;
+}
+body,div,p,span,h1,h2,h3,h4,h5,h6,b,ol,ul,li,dl,dt,dd,em,i,input{
+	margin:0;
+	padding:0;
+	font:normal 400 12px tahoma,"宋体";
+	list-style:none
+}
+img{
+	border:0
+}
+select,textarea,img,fieldset,input{
+	font-family:tahoma, "宋体";
+	vertical-align:middle
+}
+del{
+	font:normal 12px "宋体",Arial, Helvetica, sans-serif;
+}
+a:link,a:visited{
+	color: #555;
+	text-decoration:none;
+}
+a:hover,a:active{
+	color:#d10042;
+}
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+/*letao  toubu*/
+#blank{
+	width: 100%;
+	height: 29px;	
+	margin: 0 auto;
+}
+#lt_top{
+   width: 100%;
+   height:auto;
+   background: #f9f9f9;
+   position: fixed;
+   _position:absolute;
+   _top:expression(eval(document.documentElement.scrollTop));
+   top:0;
+   left:0;
+   z-index: 997;
+   border-bottom: 1px solid #CCCED1;
+}
+
+#lt_top .lttop{
+	width: 990px;
+	height: 29px;
+	margin: 0 auto;
+	position: relative;
+}
+#lt_top .lttop .lt_brand{
+	border-right: 1px solid #E1E2E5;
+	position: absolute;
+}
+#lt_top .lttop ul.lt_brand li.ltcur{
+	width: 70px;
+	height: 30px;
+	overflow: hidden;
+	border-left: 1px solid #E1E2E5;
+	background: url(../images/letao.gif) no-repeat 0 -29px;
+}
+#lt_top .lttop div.letaomenu{
+	height: 23px;
+	position: absolute;
+	right:0;
+	top:8px;
+}
+#lt_top .lttop .letaomenu a{
+	padding:1px 5px 6px;
+	display: inline-block;
+}
+#lt_top .lttop .mytao_d{
+/*	display: none;*/
+	position: absolute;
+	z-index: 997;
+	width: 288px;
+	padding-bottom: 5px;
+	border:1px solid #D2D2D2;
+	border-top: none;
+	background: #fff;
+	top:22px;
+	left: -214px;
+	/*left: 440px;*/
+}
+#lt_top .lttop .mytao_d ul{
+	float: left;
+}
+#lt_top .lttop .mytao_d li{
+	width:120px;
+	height:30px;
+	line-height: 30px;	
+	border-bottom:1px dotted #eee;
+	margin:0 10px;
+	*display:inline;
+}
+#lt_top .lttop .mytao_d li.noline{
+	border:0 none;
+}
+#lt_top .lttop .mytao_d .middleline{
+	width:0;
+	height:93px;
+	margin:15px 0;
+	border-left:1px solid #eee;
+}
+#lt_top .lttop .letaomenu .loading{
+	width:228px;
+	padding:10px 0;
+	position: absolute;
+	border:1px solid #D2D2D2;
+	border-top: none;
+	top:22px;
+	left: -154px;
+	z-index: 998;
+	background:#fff url(../images/ajax-loader.gif) no-repeat 50% 50%;
+}
+#lt_top .lttop .letaomenu .loading h2{
+	color:#333;
+	font-weight: 700;
+	padding: 0 15px;
+	line-height:22px;
+}
+#lt_top .lttop .letaomenu .loading ul li{
+    border-bottom:1px solid #eee;
+    padding:5px 0;
+    line-height: 22px;
+    color: #B6B6B6;	
+}
+#lt_top .lttop .letaomenu .loading ul li a{
+    display: block;	
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 0,0,0,10px;
+}
+#lt_top .lttop .letaomenu .loading div a{
+   display: inline-block;
+   height: 27px;
+   padding:5px 0 8px;
+   width: 40px;
+   margin: 3px;
+   border:1px solid #ebebeb;
+}
+#lt_top .lttop .letaomenu .loading div a:hover{
+	border:1px solid #e61c3c;
+}
+#lt_top .loading ul li a em,#lt_top .loading ul li a i,#lt_top .loading ul li a b{
+	cursor: pointer;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden;
+}
+#lt_top .loading ul li a b,#lt_top .loading ul li a i{
+	padding:0 5px;
+}
+#lt_top .loading ul li a em{
+	width: 140px;
+}
+#lt_top .lttop .letaomenu  #ddl_Message{
+	width:128px;
+	padding:8px 0 0;
+	position: absolute;
+	border:1px solid #D2D2D2;
+	border-top: none;
+	top:22px;
+	left: -54px;
+	background: #fff;
+}
+#lt_top .lttop .letaomenu #ddl_Message b{
+	padding-left:3px;	
+}
+#lt_top .lttop .letaomenu #ddl_Message a{
+	display:block;
+	width:128px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	padding:0;
+	margin-bottom:9px;	
+}
+#lt_top .lttop .letaomenu #ddl_Message a:link,#lt_top .lttop .letaomenu #ddl_Message a:visited
+{
+	color:#666;
+}
+
+#lt_top .lttop .letaomenu #ddl_Message a:hover,.loading ul li a:hover,#lt_top .lttop .letaomenu #ddl_Message a:active
+{
+	color:#fff;
+	background-color:#E61C3C;
+}
+#lt_top .lttop .mytao_d em{
+	display:block;
+	height:23px;
+	padding:5px 10px;
+	background-image: url(../images/pub_bg3.gif);
+	background-repeat:repeat-x;
+	background-position:0 -767px;	
+}
+#lt_top .lttop .letaomenu .down{
+	padding:1px 19px 6px 8px;
+	background:url(../images/pub_bg3.gif) right -579px;
+	position: relative;
+	z-index: 9999;
+}
+#lt_top .lttop .letaomenu .mobile{
+	padding-right:3px;
+}
+#lt_top .lttop .letaomenu .mobile i{
+	width:16px;
+	padding:0 15px 0 0;
+	background: url(../images/mobile.gif) no-repeat 0 3px;
+}
+#lt_top .lttop .letaomenu .hover{
+	padding:0 18px 6px 8px;
+	border: 1px solid #D2D2D2;
+	border-bottom:none;
+	text-decoration:underline;
+	background: #fff url(../images/pub_bg3.gif) right -443px;
+	z-index:999;	
+}
+/*letao  toubu*/
+/*头部中间部分*/
+#lt_search{
+	width: 100%;
+    height:75px;
+	margin: 0 auto;
+	background: url(../images/top_bg.gif) repeat-x scroll 0 0;
+}
+#lt_search .ltsearch{
+	width: 990px;
+    height:100%;
+	margin: 0 auto;	
+}
+#lt_search .ltsearch a{
+    display: block;
+    width: 115px;
+    height: 75px;
+    float: left;
+}
+#lt_search .ltsearch a.sdf{
+	display: block;
+	width: 165px;
+	height: 75px;
+	font: left;
+}
+#lt_search .ltsearch #ltsearch{
+	float: left;
+	height: 27px;
+	padding:20px 0 20px 50px;
+	width: 336px;
+	overflow: hidden;
+}
+#lt_search .ltsearch #ltsearch input{
+	margin-top: 2px;
+	display: block;
+	float: left;
+	overflow: hidden;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #D2D2D2;
+    color: #CDCDCD;
+    font-size: 12px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 25px;
+    padding: 4px;
+    width: 239px;
+}
+#lt_search .ltsearch #ltsearch em{
+	margin-top: 2px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	height: 35px;
+	width: 61px;
+	background: url(../images/searchV3.gif) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#lt_search .ltsearch #ltotherinfo{
+	display: block;
+	background: url(../images/songhuoV3.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 75px;
+    margin: 0 0 0 64px;
+    overflow: hidden;
+    width: 257px;
+}
+#lt_search .ltsearch #ltotherinfo a.tian1{
+	width: 75px;
+	height: 28px;
+	margin-left: 36px;
+	margin-top: 38px;
+	display: inline-block;
+	text-decoration: none;
+}
+#lt_search .ltsearch #ltotherinfo a.tian2{
+   display: inline-block; 
+   width: 78px;
+   height: 28px;
+   margin-left: -75px;
+   margin-top: 10px;
+}
+/*头部中间部分结束*/
+/*乐淘头部最后菜单*/
+#lt_nav{
+   	width:100%;
+    height:35px;
+    background:#0A0A0A;
+}
+#lt_nav .ltnav{
+	width: 990px;
+	height:100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 990;
+}
+#lt_nav .ltnav ul{
+   position: absolute;
+   z-index: 999;
+}
+#lt_nav .ltnav ul li{
+	height: 35px;
+	width:120px;
+	float: left;
+	border-right: 1px solid #252525;
+	position: relative;
+}
+#lt_nav .ltnav ul li.first{
+	width: 120px;
+	height: 35px;
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+}
+#lt_nav .ltnav ul li a.le{
+	color: #fff;
+	font:700 14px/28px 微软雅黑,宋体 ;
+	height: 33px;
+	overflow: hidden;
+	padding: 2px 0 0;
+	text-align: center;
+	width: 120px;
+	display: block;
+	float: left;
+}
+#lt_nav .ltnav ul li a.hover{
+	background-color: #fff;
+	width: 117px;
+	height: 31px;
+}
+#lt_nav .ltnav ul li a.sub{
+	background: url(../images/pub_bg3.gif) no-repeat right -653px;
+    padding: 1px 22px 0 17px;
+    width: 82px;
+}
+#lt_nav .ltnav ul li a.subhover{
+	padding-bottom:2px;
+	background: #fff url(../images/pub_bg3.gif) no-repeat 95px -620px;
+}
+#lt_nav .ltnav ul li a.hover,#lt_nav .ltnav ul li a.subhover{
+	border:2px solid #000;
+	border-bottom: none;
+	color: #d10042;
+}
+#lt_nav .letao_cmf{
+	display:block;
+	width:440px;
+	border:2px solid #402929;
+	border-top: none;
+	background-color:red;
+	position:absolute;
+	top:36px;
+	z-index:988;
+}
+#lt_nav .letao_info,#lt_nav .brandinfo{
+	float:left;
+}
+#lt_nav .letao_info{
+	padding:10px 15px 13px;
+	width:410px;
+	background-color:#fff;
+}
+#lt_nav .letao_info dl,#lt_nav .letao_info dt,#lt_nav .letao_info dd{
+	float:left;
+}
+#lt_nav .letao_info p{
+	padding-right:2px;
+	float:right;
+}
+#lt_nav .letao_info dl{
+	padding:0 0 8px;
+	margin:0 0 8px;
+	border-bottom:1px solid #f0f0f0;
+}
+
+#lt_nav .letao_info dt{
+	width:65px;
+	height:22px;
+	line-height:22px;
+	font-weight:700;
+	text-align:right;
+}
+
+#lt_nav .letao_info dd{
+	width:330px;
+	padding:0 0 0 15px;
+}
+#lt_nav li .letao_info dd a{
+	display:inline-block;
+	*display:inline;
+	height:22px;
+	line-height:22px;
+	margin-right:10px;
+	zoom:1;
+}
+
+#lt_nav li .letao_info p a{
+	display:block;
+	width:92px;
+	height:20px;
+	line-height:20px;
+	padding:0 0 0 10px;
+	background-position:0 -747px;
+}
+#lt_nav li .letao_info dt a:link,#lt_nav li .letao_info dt a:visited{
+	color:#000;
+}
+
+#lt_nav li .letao_info dd  a:link,#lt_nav li .letao_info dd a:visited{
+	color:#5b5b5b;
+}
+
+#lt_nav .letao_info p a:link,#lt_nav .letao_info p a:visited{
+	color:#333;
+}
+
+#lt_nav li .letao_info dt a:hover,#lt_nav li .letao_info dt a:active,
+#lt_nav li .letao_info dd a:hover,#lt_nav li .letao_info dd a:active,
+#lt_nav .letao_info p a:hover,#lt_nav .letao_info p a:active{
+	color:#d10042;
+	text-decoration:underline;
+}	
+
+
+/*乐淘购物车部分样式开始*/
+#lt_nav #lt_car{
+	position: relative;
+	z-index: 990;
+	width: 220px;
+	height: 100%;
+	float: right;
+}
+#lt_nav #lt_car .lt_car_d{
+	background-color: #E61C3C;
+	float: right;
+	height: 25px;
+	overflow: hidden;
+	padding: 5px 4px 5px 12px;
+	width: 184px;
+	position: relative;
+	z-index: 990px;
+}
+#lt_nav #lt_car .lt_car_d em{
+	background: url(../images/pub_bg3.gif) no-repeat -1px -233px;
+	display: block;
+	height: 11px;
+	width: 12px;
+	margin: 8px 20px 0 0;
+	float: left;
+}
+#lt_nav #lt_car .lt_car_d .ltcar_num{
+   background: url(../images/pub_bg3.gif) no-repeat right -260px;	
+   color: #fff;
+   line-height: 25px;
+   padding-right: 7px;
+   float: left;
+}
+#lt_nav #lt_car .lt_car_d .ltcar_num i{
+   color: #fff;
+   font-weight: 700;
+   padding:0 5px;
+   margin:0;
+}
+#lt_nav #lt_car .lt_car_d .ltcar_jiesuan{
+	background: url(../images/pub_bg3.gif) no-repeat 0 -173px;
+	display: block;
+	float: right;
+	height: 25px;
+	width: 75px;
+}
+#lt_nav #lt_car .lt_shopcar{
+	border:2px solid rgb(209,0,66);
+	padding:1px;
+	position: absolute;
+	background-color: #fff;
+    width: 402px;
+    top:35px;
+    left:-188px;
+    z-index: 900;
+    display:none;
+}
+#lt_nav #lt_car .lt_shopcar .lt_sh_uid{
+	text-indent: 20px;
+	font-size: 14px;
+	color: rgb(51,51,51);
+	background-color: rgb(242,242,242);
+	height: 22px;
+	line-height: 22px;
+	position: relative;
+	font-size: 700;
+}
+#lt_nav #lt_car .lt_shopcar .sss{
+	width: 380px;
+	line-height: 18px;
+}
+#lt_nav #lt_car .lt_shopcar .sss table.lt_car_tab{
+	border:0 none;
+	border-collapse: collapse;
+	font-family:Verdana,"Courier New","宋体" ;
+	font-size: 12px;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 380px;
+	line-height: 18px;
+}
+
+#lt_nav #lt_car .lt_shopcar .sss table img {
+    border: 1px solid #DDDDDD;
+    height: 27px;
+    width: 40px;
+    vertical-align: middle;
+}
+#lt_nav #lt_car .lt_car_tab .prod_image{
+	text-align: left;
+	width: 50px;
+}
+#lt_nav #lt_car .lt_car_tab thead td{
+	border:0 none;
+	font-weight: 700;
+	color: #999;
+}
+#lt_nav #lt_car .lt_car_tab .prod_name{
+	text-align: left;
+	vertical-align: top;
+}
+#lt_nav #lt_car .lt_car_tab .prod_count{
+	width: 70px;
+	text-align: center;
+}
+#lt_nav .tly_prodadd {
+    background-position: -16px 0;
+}
+#lt_nav .tly_prodadd, .tly_prodsubstract, .tly_prodadd_hover, .tly_prodsubstract_hover {
+    background: url("../images/addbuttonsplit.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 16px;
+    width: 16px;	
+}
+#lt_nav .tly_prodnum {
+    float: right;
+    width: 25px;
+    text-align: center;
+}
+
+.tly_prodadd, .tly_prodsubstract, .tly_prodadd_hover, .tly_prodsubstract_hover {
+    background: url("../images/addbuttonsplit.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 16px;
+    width: 16px;
+}
+#lt_nav #lt_car .lt_car_tab .prod_price td {
+    border-bottom: 1px solid #EEEEEE;
+    height: 20px;
+    line-height: 18px;
+    padding: 0 0 10px;
+}
+#lt_nav #lt_car .lt_car_tab .prod_price td i{
+	color: #FF6600;
+    font-weight: 700;
+}
+#lt_nav .lt_car_tab .tfoot .prodtotal{
+	text-align: right;
+	color: #999;
+}
+#lt_nav .lt_car_tab .ltbigprice {
+    color: #FF6600;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 6px;
+}
+#lt_nav .lt_car_tab a:link, #lt_nav .lt_car_tab a:visited {
+    color: #008CD6;
+    text-decoration: none;
+}
+#lt_nav .lt_car_tab .btn_clear {
+    background: url("../images/sc_clear.gif") no-repeat scroll 0 6px rgba(0, 0, 0, 0);
+    float: left;
+    height: 11px;
+    line-height: 10px;
+    padding: 5px 0 0 14px;
+}
+
+#lt_nav .lt_car_tab img.btn_toorder {
+    border: 0 none;
+    cursor: pointer;
+    height: 25px;
+    width: 90px;
+}
+/*乐淘购物车部分样式结束*/
+/*  乐淘头部最后菜单结束 */
+/*页面轮播开始*/
+#lt_slide{
+	width: 100%;
+	height:440px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+#lt_slide .im_slide{
+	width: 100%;
+	height:100%;
+	margin:0 auto;
+	position: absolute;
+}
+#lt_slide .im_slide div.img{
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    position: absolute;
+    background:url("images/e.gif") no-repeat scroll center center transparent;
+}
+#lt_slide .jiantou{
+	width: 990px;
+	height:440px;
+	position: relative;
+	margin:0 auto;
+}
+#lt_slide .jiantou .amask{
+	width: 990px;
+	height:440px;
+	position: absolute;
+	margin:0 auto;
+	z-index: 888;
+}
+#lt_slide .jiantou div.aion{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    top:195px;
+    z-index: 99;
+}
+#lt_slide .jiantou div.left{
+    background: url(../images/right2.gif) no-repeat;
+    left:-50px;
+}
+#lt_slide .jiantou div.right{
+    background: url(../images/right.gif) no-repeat; 
+    left:1040px;
+}
+/*页面轮播结束*/
+/*乐淘新品爆款开始*/
+#container{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	position: relative;
+}
+#container .lt_main{
+    margin: 0 auto;
+    overflow: hidden;
+}
+#container .lt_sales{
+	width: 990px;
+	height:382px;
+	overflow: hidden;
+	margin:0 auto;
+	position:relative;
+}
+#container .lt_sales .ad_box,#container .lt_sales .goods_box{
+	width: 488px;
+	height:381px;
+	overflow:hidden;
+	margin: 0 auto;
+	border:1px solid #ccc;
+	position: absolute;
+	top:0px;
+	left:0px;	
+}
+#container .lt_sales .goods_box{
+	position: absolute;
+	top:0px;
+	left:500px;	
+}
+#container .lt_sales .ad_box h2,#container .lt_sales .goods_box h2{
+	display:block;
+	background-color:#F7F7F7;
+	border-bottom:1px #E1E1E1 solid;
+	height:39px;
+}
+#container .lt_sales .ad_box a.outer,#container .lt_sales .goods_box a.outer{
+    width:347px;
+	height:339px;
+	float:left;
+	border:1px #E1E1E1 solid;
+	border-bottom: 1px solid #ccc;
+	border-width:0 0 1px 0;
+	background-color:#F6F5F5;
+	display:block
+}
+#container .lt_sales .ad_box p,#container .lt_sales .goods_box p{
+	width:141px;
+	float: left;
+}
+#container .lt_sales .ad_box p a,#container .lt_sales .goods_box p a{
+	border:1px #E1E1E1 solid;
+	border-width:0 0px 1px 1px;
+	height:67px;
+	display:block;
+	background:none;
+}
+#container .lt_sales .ad_box .imgfocus,#container .lt_sales .goods_box .imgfocus{
+	border-left:none;
+	border-right:2px #E61C3C solid;
+	background-color:#FFF;
+}
+/*乐淘新品爆款结束*/
+
+/*乐淘服装各个品牌开始*/
+#container .lt_main .lt_shop{
+	width: 990px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: pink;
+	border-top: 3px solid #E61C3C;
+}
+#container .lt_main .lt_shop .lt_yiren{
+	background: #fff;
+	border:3px solid #b61c3c;
+	display: block;
+	overflow: hidden;
+	width: 990px;
+	border-bottom: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+    margin: 0 0 1px;
+}
+#container .lt_main .lt_shop .header{
+    background: none repeat scroll 0 0 #F8F8F8;
+    border-bottom: 1px solid #E1E1E1;
+    height: 40px;
+    overflow: hidden;
+}
+#container .lt_main .lt_shop .imgbox_lt{
+     overflow: hidden;
+     width: 988px;
+     background:black;
+	}
+#container .lt_main .lt_shop .imgbox_lt div{
+		width: 282px;
+		float: left;
+	}
+/*乐淘服装各个品牌结束*/
+/*乐淘会员帮助页面开始*/
+#ltmemhelp{
+	width: 100%;
+	background: #F1F2F1;
+	border-top:1px solid #cfd0cf;
+	overflow:hidden;
+}
+#ltmemhelp .lt_help{
+   width:990px;
+   height: 130px;
+   margin: 0 auto;
+   padding: 15px 0;
+}
+#ltmemhelp .lt_help dl{
+	width:188px;
+	display:inline-block;
+	*display:inline;
+	margin:0 5px 0 0;
+	vertical-align:top;
+	zoom:1;	
+}
+#ltmemhelp .lt_help dl dt,#ltmemhelp .lt_help dl dd{
+	line-height:25px;	
+}
+#ltmemhelp .lt_help dl dd{
+	padding-left:38px;
+	background: url(../images/pub_bg3.gif) no-repeat  0  -413px;
+}
+#ltmemhelp .lt_1{
+	background: url(../images/pub_bg3.gif) no-repeat 0 -286px;
+}
+#ltmemhelp .lt_2{
+	background: url(../images/pub_bg3.gif) no-repeat 0 -311px;	
+}
+#ltmemhelp .lt_3{
+	background: url(../images/pub_bg3.gif) no-repeat 0 -336px;	
+}
+#ltmemhelp .lt_4{
+	background: url(../images/pub_bg3.gif) no-repeat 0  -361px;	
+}
+#ltmemhelp .lt_5{
+	background: url(../images/pub_bg3.gif) no-repeat 0 -386px;	
+}
+#ltmemhelp .lt_help dl dt{
+	padding-left:38px;
+	border-bottom:1px solid #dedfde;	
+	letter-spacing:1px;
+	margin-bottom:2px;
+	font-weight:700;
+	color:#747474;	
+}
+/*乐淘会员帮助页面结束 */
+
+/*乐淘尾部部分开始*/
+p#ltlinker{
+    width:990px;
+	height:40px;
+    margin:0 auto; 
+    text-align: center;
+    line-height: 40px;
+
+}
+p#ltinfo{
+    width:990px;
+	height:40px;
+    margin:0 auto; 
+    text-align: center;
+    line-height: 40px;
+    color:#9D9D9C;
+}
+p#ltinfo a{
+    color:#9D9D9C;
+}
+p#ltinfo a:hover{
+	color:#9D9D9C;
+}
+#ltfooter{
+	height: 81px;
+	padding: 15px 0 20px;
+    position: relative;
+}
+#ltfooter .lt_fmenu{
+	height: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#ltfooter .lt_fmenu p{
+	width:990px;
+	height:20px;
+	line-height:20px;
+	margin:0 auto;
+	position:relative;
+}
+#ltfooter .lt_fmenu p span{
+	display:block;
+	height:20px;
+	position:absolute;
+	top:1px;
+	left:0;	
+}
+#ltfooter .lt_fmenu p span a{
+	display:inline-block;
+	*display:inline;
+	height:18px;
+	line-height:18px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#fff #fff #e5e5e5;
+	color:#b2b2b2;
+	padding:0 10px;
+	zoom:1;
+}
+#ltfooter .lt_fmenu p a.onchos{
+	border: 1px solid #fff;
+	border-color:#e5e5e5 #e5e5e5 #fff;
+	color:#666;
+}
+
+#ltfooter .lt_fcontent{
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 990px;
+}
+#ltfooter .imglink a{
+	display:inline-block;
+	*display:inline;
+	margin:0 15px 0 0;
+	zoom:1;	
+}
+#ltfooter .imglink a.alast{
+	margin-right:0;	
+}
+#ltfooter .textlink a{
+	display:inline-block;
+	*display:inline;
+	height:20px;
+	font:400 12px/20px 宋体;	
+}
+#ltfooter .textlink i{
+	color:#e4e4e4;
+	padding:0 6px;
+}
+/*乐淘尾部部分结束*/

@@ -1,0 +1,172 @@
+/*<!--pay头部分开始  -->*/
+#lt_payhead{
+	width: 990px;
+	height:80px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#lt_payhead .pay_logo{
+	float: left;
+	height: 80px;
+	width: 300px;
+}
+/*	<!--pay头部分结束  -->*/
+/*	<!--pay订单详情部分开始  -->*/
+.paybody{
+	clear: both;
+    margin-top: 8px;
+    margin: 0 auto;
+    width: 950px
+}
+.paybody h5{
+    background-color: #FFFFFF;
+    float: left;
+    font-weight: 700;
+    padding: 0 10px;
+    position: relative;
+    top: 8px;
+}
+.pb_inner {
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    padding: 6px 0 0;
+}
+
+#choosed_product {
+    margin: 14px auto 0;
+    width: 900px;
+}
+#choosed_product thead td {
+    color: #999999;
+    line-height: 24px;
+    text-align: center;
+}
+.td_prodimage {
+    width: 70px;
+}
+#choosed_product thead .td_prodname {
+    text-align: left;
+    width: 320px;
+}
+.td_prodstatus {
+    width: 40px;
+}
+.td_prodsize {
+    width: 40px;
+}
+.td_prodcount {
+    width: 100px;
+}
+.td_shoppeprice {
+    width: 60px;
+}
+.td_letaoprice {
+    width: 100px;
+}
+#choosed_product tbody td {
+    height: 29px;
+    text-align: center;
+}
+#choosed_product tbody td img {
+    border: 1px solid #DDDDDD;
+    height: 27px;
+    width: 40px;
+}
+.product_count {
+    float: left;
+    width: 38px;
+}
+.pb_inner {
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    padding: 6px 0 0;
+}
+#reciever_list{
+    margin: 0 auto;
+    padding: 8px 0 6px;
+    width: 900px;
+}
+.table_address {
+    margin: 0 auto;
+    width: 800px;
+}
+.table_address tbody .taleft {
+    padding: 0 16px 0 0;
+    text-align: right;
+    width: 100px;
+}
+.table_address tbody td {
+    height: 30px;
+}
+.table_address tbody td i {
+    color: #FF0000;
+    list-style: none;
+}
+.midinput {
+    width: 180px;
+}
+.shortinput, .midinput, .longinput {
+    background: url("../images/input.gif") no-repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #999999;
+    height: 16px;
+    padding: 3px 2px;
+}
+input {
+    font-family: Verdana,Arial,Helvetica,sans-serif,"宋体";
+    vertical-align: middle;
+}
+.table_address select {
+    width: 110px;
+}
+.shortinput {
+    width: 90px;
+}
+.longinput {
+    width: 380px;
+}
+#reciever_list p span, #pay_type p span, #div_delivery_method p span {
+    float: left;
+    line-height: 24px;
+    overflow: hidden;
+    color: #999;
+}
+.paytype_name {
+    color: #333333;
+    margin: 0 28px 0 0;
+}
+.r_user_name input, .paytype_name input {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/*	<!--pay订单详情部分结束  -->*/
+
+.pb_inner {
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    padding: 6px 0 0;
+}
+.pay_confirm {
+    background: url("../images/dotline.gif") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    line-height: 32px;
+    margin: 0 auto;
+    width: 860px;
+}
+.pay_confirm i {
+    line-height: 32px;
+}
+#discount_info i, #sum_price i {
+    color: #008CD6;
+    font-weight: 700;
+    padding-right: 16px;
+}
+#sum_price i {
+    color: #FF6600;
+    font-size: 16px;
+}
+#submit_order {
+    padding: 20px 0 60px;
+    text-align: center;
+}
+#submit_order img {
+    cursor: pointer;
+}
