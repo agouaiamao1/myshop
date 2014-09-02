@@ -1,0 +1,73 @@
+<load file="__ROOT__/Public/tpl/header.html"/>
+<title>乐淘网上鞋城 - 乐淘用户登陆</title>
+<link rel="stylesheet" href="__CONTROL_TPL__/css/loginReg.css" />
+<script type="text/javascript" src="__CONTROL_TPL__/js/register.js"></script>
+
+<load file="__ROOT__/Public/tpl/nav.html"/>
+   <div id="ltlogreg" class="center relat">
+   	 <!-- 乐淘登陆开始 -->
+   	 <div id="ltlinknav" class="blue_border">
+       <a href="/">首页</a>  》 登录
+     </div>
+     
+     <div class="reg_main">
+     	<div id="reg_right">
+         <h2>还不是乐淘用户？</h2>
+         <p>现在免费注册成为乐淘用户，便能立刻享受便宜又放心的购物乐趣。</p>
+         <div style="text-align:center">
+           <a title="注册帐号" href="{|U('Login/register')}">
+             <img alt="注册帐号" src="__ROOT__/Public/images/btn_register.gif">
+           </a>
+        </div>
+      </div>
+
+     <div class="login_table">
+      <form action="{|U('Login/login')}" method='post' name='login'>
+     	<table width="490">
+     		<tbody>
+     			<tr>
+     				<td class="td_left">账号名：</td>
+     				<td>
+     					<input id="txtUserName" class="reg_input" name="loginuser">
+     				    <span class="regInfo">(用户名的长度应在6-32位之间)</span>
+     			    </td>
+     			</tr>
+     			<tr>
+     				<td class="td_left">密  码：</td>
+            <td>
+                <input id="txtPwd" class="reg_input" type="password" name="loginpwd">
+                <span class="regInfo">(密码 3-25位 区分大小写)</span>
+            </td>
+     			</tr>
+     			<tr>
+     				<td></td>
+            <td>
+                <a href="##" style="margin-left:10px;margin-right:10px;text-decoration:underline;color:#999">  找回密码</a>
+                <input id="btn_login" class="btnblue" type="submit" value="登 录">
+            </td>
+     			</tr>
+     		</tbody>
+     	</table>
+      </form>
+     	<div style="float:left;width:400px;padding:0 0 0 32px">
+     		<h2>使用合作伙伴帐号登录乐淘：</h2>
+     		<div style="padding-top:5px;height: 130px">
+     			
+          <a href="##" style="float:left;height:17px;margin-left:3px;padding:0 5px 0 4px;line-height:17px;border-right:1px solid #DBDBDB"><img src="__ROOT__/Public/images/qq.gif">QQ</a>
+               
+               <br /><br /><br />
+          <a style="display:block;height:40px;width:125px;padding:5px 0 0 8px" href="##">
+          <img src="__ROOT__/Public/images/ZFB_Login.gif">
+        </a>
+     	    </div>
+     	    <br class="clear">
+        </div>
+        <br class="clear">
+     </div>
+     <br class="clear">
+   </div>
+  </div>
+  <!-- 乐淘登陆结束 -->
+<load file="__ROOT__/Public/tpl/footer2.html"/>
+</body>
+</html>

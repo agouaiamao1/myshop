@@ -1,0 +1,14 @@
+$(function(){
+	$('form').validate({
+		gtname:{
+			rule:{
+				required:true,
+				ajax:{url:CONTROL+'/check_typename'}
+			},
+			error:{
+				required:'商品类型名称不能为空',
+				ajax:'类型名已经存在'
+			}
+		}
+	})
+})

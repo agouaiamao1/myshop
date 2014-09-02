@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>添加商品</title>
+	<hdjs/>
+	<js file='__CONTROL_TPL__/js/js.js'/>
+	<css file='__CONTROL_TPL__/css/css.css'/>
+	<js file="__CONTROL_TPL__/js/validate.js">
+</head>
+<script>
+//添加商品规格
+function add_spec(){
+  var html = $('.kkk').clone()
+  var h ="<tr>\
+          <td>\
+          <input type='text' name='st_stock[]' class='stock'/>\
+          </td>\
+		  <td>\
+		  <input type='text' name='st_price[]' class='price'/>\
+		  </td>\
+		  <td>\
+		  <input type='text' name='good_num[]' class='goodnum'/>\
+		  </td>\
+		  <td>\
+		  <input type='button' value='取消' id='attr_add' class='btn1' onclick='del_spec(this)'>\
+		  </td>\
+		  </tr>";
+  $(".jjj").after(h).siblings('tr').eq(1).prepend(html);
+  $('.kkk').parent().next().find('.kkk').removeClass('kkk');
+}
+function del_spec(obj){
+  $(obj).parents('tr').eq(0).remove();
+}
+</script>
+<body>
+	<div class='wrap'>
+	  <div class="menu_list"> 
+		<ul>
+		  <li><a href="{|U:'index'}"> 商品列表 </a></li>
+		  <li><a href="javascript:;" class='action'> 添加商品 </a></li> 
+		</ul> 
+	  </div>
+	<form action="{|U:'add'}" method='post' enctype='multipart/form-data'>
+	  <div class="tab">
+		 <ul class="tab_menu">
+		    <li lab="base"><a> 基本设置 </a></li>
+		    <li lab="ext"><a> 扩展配置 </a> </li>
+		    <li lab="pic"><a> 内容页展示图片 </a></li>
+		    <li lab="brand"><a> 品牌 </a> </li>
+		  </ul>
+		
+		<div class="tab_content">
+			<div id="base">
+			   <table class="table1 hd-form">
+				   <tr>
+					 <th class='w100'>栏目</th>
+					 <td>
+						{$cname}
+						<input type="hidden" name='cid' value='{$cid}' />
+					 </td>
+				   </tr> 
+					<tr>
+						<th>商品名称</th>
+						<td>
+						  <input type="text"  name='gname' class='w200'/>
+						</td>
+					</tr>
+					<tr>
+						<th>属性</th>
+						<td>
+							<label><input type="radio" name='flag' value="1" /> 推荐</label>
+							<label><input type="radio" name='flag' value="2" /> 置顶</label>
+						</td>
+					</tr>
+					<tr>
+						<th>商品图片</th>
+						<td>
+							<!-- <upload name='img' thumb='200,200,500,500'/> -->
+							<input type="file" name="pic"/>
+						</td>
+					</tr>
+					<tr>
+						<th>价格</th>
+						<td>
+							<input type="text"  name='price' class='w200'/>
+						</td>
+					</tr>
+					<tr>
+						<th>库存</th>
+						<td>
+							<input type="text"  name='stock' class='w200'/>
+						</td>
+					</tr>
+			     </table>
+			    <div id='attr' class='hd-form'>
+			      <h3>属性</h3>
+			      <list from='$attr' name='a'>
+				   <dl>
+				     {$a.html}
+				   </dl>
+			      </list>
+			    </div>
+			    <div id='spec' class='hd-form'>
+				  <h3>规格</h3>
+					{$spec}	
+			    </div>
+		      </div>
+		      
+		      <div id="ext">
+				<table class="table1 hd-form"> 
+					<tr>
+						<th class='w100'> 关键字 </th>
+						<td>
+							<input type="text" name='keywords' class='w300'/>
+						</td>
+					</tr>
+					<tr>
+						<th> 栏目描述 </th>
+						<td>
+								<textarea name="description" class='w400 h100'></textarea>
+						</td>
+					</tr>
+					</tr>
+					<tr>
+						<th> 服务 </th>
+						<td>
+								<textarea name="service" class='w400 h100'></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th> 点击数 </th>
+						<td>
+								<input type="text" name='click' value='200'/>
+						</td>
+					</tr>
+					<tr>
+						<th> 上架时间 </th>
+						<td>
+							<input type="text" name='addtime' id='addtime' class='w200' value="{|date:'Y/m/d H:i:s'}"/>
+							<script>
+                               $('#addtime').calendar({format: 'yyyy/MM/dd HH:mm:ss'}); 
+                            </script>
+						</td>
+					</tr>
+					<tr>
+						<th>详细介绍</th>
+						<td>
+							<ueditor name='body'/>
+						</td>
+					</tr>
+			    </table>
+		      </div>
+		
+		      <div id="pic">
+				<table class='table1' id='c_pic'>
+					<tr>
+						<th class='w100'>
+							<a href="javascript:add_pic();">[+]</a>
+						</th>
+						<td>
+							<input type="file" name='good_pic[]'/>
+						</td>
+					</tr>
+				</table>
+		      </div>
+	         
+	         <div id="brand">
+				<ul>
+					<list from='$brand' name='b'>	
+						  <label>
+						  	<li style="float: left;">
+							  <img src="__ROOT__/{$b.logo}" class='h50'/><br/>
+							   <input type="radio" name='brand_bid' value='{$b.bid}'/> {$b.bname}
+						    </li>
+						 </label>	
+					</list>
+				 </ul>
+		      </div>
+	    </div>  
+		 <div>
+			<input type="submit" value='确定' class='hd-success'/>
+		 </div>	
+	
+     </form>
+  </div>
+</body>
+</html>

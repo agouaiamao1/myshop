@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>添加商品类型</title>
+    <hdjs/>
+    <js file='__CONTROL_TPL__/js/add.js'/>
+</head>
+<body>
+    <form method='post' class='hd-form' action="{|U:'type_edit'}">
+    	<div class='title-header'>
+		编辑商品类型
+    	</div>
+    	<table class="table1">
+            <tr>
+                <th class='w100'>原来商品类型</th>
+                <td>
+                {$old_type.0.gtname}
+                </td>
+            </tr>
+    		<tr>
+    			<th class='w100'>新商品类型名称</th>
+    			<td>
+                   <input type="hidden" name="gid" value="{$old_type.0.gid}"/>
+    			   <input type="text" name='gtname' class='w200'/>
+    			</td>
+    		</tr>
+            <tr>
+                <th class='w100'></th>
+                <td>
+                    <input type="submit" value="确定" class="hd-success"/>
+                    <input type="reset" value="重置" class="hd-success"/>
+                </td>
+            </tr>
+    	</table>
+    </form>
+</body>
+</html>

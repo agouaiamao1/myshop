@@ -1,0 +1,14 @@
+$(function(){
+	$('form').validate({
+		cname:{
+			rule:{
+				required:true
+			},
+			error:{
+				required:"栏目不能为空"
+			},
+			message:"请输入中文栏目名称",
+			success:'输入正确'
+		}
+	})
+})

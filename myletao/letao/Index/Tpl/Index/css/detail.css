@@ -1,0 +1,1069 @@
+a:link, a:visited {
+    color: #0064C7;
+    text-decoration: none;
+}
+a:hover{
+	color: #d10042;
+}
+.clear {
+    clear: both;
+    float: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.strong {
+    font-weight: 700;
+}
+.big {
+    font-size: 16px;
+}
+.red {
+    color: #FF0000;
+}
+.pdl8 {
+    padding: 0 8px;
+}
+
+.center {
+    margin: 20px auto;
+    width: 990px;
+}
+  /*<!-- 头部小导航开始 -->*/
+#de_nav{
+	border-bottom: 1px solid #DDDDDD;
+    color: #808080;
+    font-family: 宋体;
+    padding: 6px 30px;
+}
+/*头部小导航结束*/
+
+/*商品详情开始*/
+#de_info{
+    float: left;
+    position: relative;
+    width: 790px;
+}
+
+#de_info h1{
+    padding: 15px 12px;
+}
+#de_info h1, #de_info h1 i, #de_info h1 b{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#de_info #de_shoe{
+    float: left;
+    /*overflow: hidden;*/
+    padding: 3px 0 0;
+    position: relative;
+    text-align: center;
+    width: 425px;
+}
+#de_shoe .de_xiao{
+    height: 285px;
+    overflow: hidden;
+    padding: 0 0 35px;
+}
+#de_shoe .mask{
+      width: 425px;
+      height:285px;
+      position: absolute;
+      left: 0px;
+      top:0px;
+     cursor: crosshair;
+}
+#de_shoe .follow{
+      width: 90px;
+      height:90px;
+      background:url(../image/d2.png);
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+}
+#de_shoe .de_big{
+      width:350px;
+      height:280px;
+      border:5px solid rgb(221,221,221);
+      position:absolute;
+      left:430px;
+      top:0px;
+      z-index: 990;
+      overflow: hidden;
+      display: none;
+}
+#de_shoe .de_link{
+	height: 38px;
+    line-height: 38px;
+    width: 425px;
+}
+#de_info #de_sale{
+	float: right;
+    margin-top: 3px;
+    position: relative;
+    width: 350px;
+}
+
+#de_sale p{
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+#de_sale strong{
+    color: #959595;
+    font-weight: 400;
+}
+#de_sale .black{
+	color: #333;
+}
+#de_sale .ltprice {
+    color: #D10042;
+    font-weight: 700;
+}
+#de_sale .big {
+    font-size: 16px;
+}
+
+#de_sale p a {
+    float: right;
+    margin: 0 12px 0 0;
+}
+#de_sale .saleouter .pingjia dt {
+    padding-left: 10px;
+}
+#de_sale .saleouter .pingjia dt, #de_sale .saleouter .pingjia dd {
+    float: left;
+    line-height: 26px;
+}
+
+#de_sale .saleouter .pingjia .star {
+    background-position: 0 -13px;
+    height: 13px;
+    margin: 7px 5px 0 0;
+    overflow: hidden;
+    width: 65px;
+}
+#de_sale .saleouter .pingjia .star div.xing{
+ background: #fff url(../image/commentbg1.gif) repeat-x scroll 0 0;
+}
+
+#de_sale .saleouter .pingjia dd i{
+    font-size: 14px;
+    font-weight: 700;
+}
+.red{
+    color: #FF0000;
+}
+/*商品详情结束*/
+
+
+/*范放大镜下边的小侧边栏*/
+#de_point {
+    height: 54px;
+    overflow: hidden;
+    z-index: 60;
+}
+#de_point .lm, #de_point .rm {
+    background: url("../image/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    height: 45px;
+}
+#de_point .lm, #de_point .rm {
+    display: block;
+    height: 45px;
+    margin-top: 4px;
+    width: 10px;
+}
+#de_point .lm {
+    background-position: -142px -311px;
+    float: left;
+    margin-right: 10px;
+}
+
+#de_point div.box {
+    float: left;
+    height: 54px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 385px;
+}
+#de_point .rm {
+    background-position: -152px -311px;
+    float: right;
+    margin-left: 10px;
+}
+
+#de_point ul {
+    width: 385px;
+    height: 54px;
+    overflow: hidden;
+    position: absolute;
+}
+#de_point li {
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+    display: inline-block;
+    margin:0px;
+    padding: 11px 7px 12px;
+}
+
+
+
+
+.ltOtherColorV2 {
+    height: auto !important;
+    min-height: 49px;
+    overflow: visible;
+}
+.ltOtherColorV2, .sizechosV2 {
+    padding-left: 70px;
+    position: relative;
+    text-align: left;
+}
+
+.ltOtherColorV2 dt, .sizechosV2 dt {
+    left: 0;
+    padding-left: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+.saleouter strong, .counter strong {
+    color: #959595;
+    font-weight: 400;
+}
+
+
+.ltOtherColorV2 dd{
+    background: url("../image/bigchos01.gif") no-repeat scroll 1px -68px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 36px;
+    line-height: 0;
+    margin: 0 5px 3px 0;
+    padding: 6px 4px 4px 2px;
+    width: 40px;
+}
+
+.ltOtherColorV2 dd a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 27px;
+    margin: 0;
+    overflow: hidden;
+    padding: 4px 0 9px;
+}
+.ltOtherColorV2 .chos {
+    background-position: 0 0;
+}
+
+#ltshoesize {
+    position: relative;
+}
+
+#ltshoesize .sizechosV2 {
+    padding: 15px 0 5px 70px;
+}
+.sizechosV2 {
+    min-height: 35px;
+    overflow: visible;
+}
+.ltOtherColorV2, .sizechosV2 {
+    padding-left: 70px;
+    position: relative;
+    text-align: left;
+}
+#ltshoesize .ltOtherColorV2 dt,#ltshoesize .sizechosV2 dt {
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    top: 15px;
+}
+#ltshoesize .sizechosV2 dt {
+    position: absolute;
+    left:0px;
+    top: 24px;
+}
+#ltshoesize .sizechosV2 .choosed {
+    background-position: 0 -35px;
+}
+#ltshoesize .sizechosV2 dd {
+    background: url("../image/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    text-align: center;
+    width: 35px;
+}
+#ltshoesizeinfo {
+    background: url("../image/sizeinfo_bg.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    height: 56px;
+    overflow: hidden;
+    padding: 5px 5px  7px;
+    position: absolute;
+    width: 119px;
+}
+#ltshoesizeinfo p {
+    color: #999999;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 1px;
+    padding: 0 0 0 10px;
+     text-align: left;
+}
+.saleouter p {
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: left;
+    text-align: left;
+}
+
+#ltshoesizeinfo p i {
+    color: #000000;
+    padding: 0 5px 0 0;
+}
+.saleouter p {
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#iptcount, #iptcount2 {
+    border: 1px solid #DDDDDD;
+    color: #008CD7;
+    margin: 0 6px 0 2px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#buybtnouter {
+    padding: 25px 0 2px 10px;
+    word-spacing: 12px;
+    line-height: 30px;
+    text-align: left;
+}
+
+#btnbuy{
+
+    background: url("../image/sprit_bg02.gif") no-repeat scroll 0 -384px rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    height: 45px;
+    width: 181px;
+}
+
+#collectshoe {
+    height: 30px;
+    width: 85px;
+    background: url("../image/sprit_bg02.gif") no-repeat scroll 0 -433px rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+}
+
+.counter {
+    padding: 0 0 0 10px;
+}
+
+.counter span {
+    color: #333333;
+    line-height: 26px;
+    margin-right: 100px;
+}
+
+.counter i {
+    color: #FE5409;
+    font-weight: 700;
+    padding: 0 5px 0 0;
+}
+
+.saleouter strong, .counter strong {
+    color: #959595;
+    font-weight: 400;
+}
+
+/*右边侧边广告部分开始*/
+/*<!-- 侧边广告开始 -->*/
+  #de_sideadv{
+    float: right;
+    overflow: hidden;
+    width: 190px;
+}
+
+#hotsale {
+    margin-top: 10px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#hotsale h3 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-position: 145px -248px;
+    border-color: #DDDDDD;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    color: #000000;
+    font: 700 18px/38px 微软雅黑,宋体;
+    height: 38px;
+    padding-left: 20px;
+}
+
+.qiacxb {
+    padding: 0 5px 5px;
+}
+
+.qiacxb li {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 5px 0;
+}
+
+.qiacxb li b {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    float: left;
+    height: 40px;
+    margin-top: 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.qiacxb li img {
+    padding: 7px 0 6px;
+    width: 40px;
+}
+
+.qiacxb li em {
+    display: block;
+    height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 6px 0 0 6px;
+}
+
+.qiacxb li strong {
+    color: #D00909;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left: 6px;
+}
+
+.qiacxb li i {
+    color: #999999;
+    padding-left: 4px;
+}
+/*<!-- 侧边广告结束 -->*/
+/*右边侧边广告部分结束*/
+
+
+/*<!-- 留言反馈各种开始 -->*/
+  #de_contain{
+    float: left;
+    overflow: hidden;
+    width: 790px;
+
+
+}
+
+#shoedisplay {
+    margin: 12px 0 0;
+}
+
+#shoetabparent {
+    height: 32px;
+}
+
+#shoetab {
+    background-color: #FFFFFF;
+    position: static;
+}
+.lttab {
+    border-bottom: 1px solid #D10042;
+    height: 28px;
+    padding: 2px 0 0;
+}
+
+#shoe_ntalker_qa {
+     background: url("../images/sprit_bg02.gif") no-repeat scroll 0 -301px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 28px;
+    padding: 0 10px 0 0;
+    width: 90px;
+}
+.lttab ul {
+    position: absolute;
+}
+.lttab .lttabchos {
+    border-bottom: 1px solid #FFFFFF;
+}
+.lttab li {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 5px;
+}
+.commentlisttab span a, .lttab li a {
+    color: #000000;
+}
+.lttab .lttabchos .tl {
+    background: url("../images/commentbg3.gif") repeat-x scroll -4px -78px rgba(0, 0, 0, 0);
+}
+
+.commentlisttab .lttabchos a:link, .commentlisttab .lttabchos a:visited, .lttab .lttabchos a:link, .lttab .lttabchos a:visited {
+    background: url("../images/commentbg3.gif") repeat-x scroll 0px -50px rgba(0, 0, 0, 0);
+    color: #000000;
+    display: block;
+    float: left;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 12px;
+}
+.commentlisttab span b, .lttab li b {
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    width: 2px;
+}
+.commentlisttab .lttabchos .tr, .lttab .lttabchos .tr {
+    background: url("../images/commentbg3.gif") repeat-x scroll -6px -78px rgba(0, 0, 0, 0);
+}
+
+.commentlisttab span a:link, .commentlisttab span a:visited, .lttab li a:link, .lttab li a:visited {
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding: 0 12px;
+}
+.commentlisttab span a:hover, .commentlisttab span a:hover, .lttab li a:hover, .lttab li a:hover {
+    color: #f60;
+}
+.commentlisttab span a, .lttab li a {
+background: url("../images/commentbg3.gif") repeat-x scroll 0px -22px rgba(0, 0, 0, 0);
+}
+
+.commentlisttab span .tl, .lttab li .tl {
+    background: url("../images/commentbg3.gif") repeat-x scroll 0 -78px rgba(0, 0, 0, 0);
+}
+.commentlisttab span b, .lttab li b {
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    width: 2px;
+}
+
+.commentlisttab span .tr, .lttab li .tr {
+   background: url("../images/commentbg3.gif") repeat-x scroll -2px -78px rgba(0, 0, 0, 0);
+}
+.commentlisttab span b, .lttab li b {
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    width: 2px;
+}
+
+.commentlisttab .lttabchos i, .lttab .lttabchos i {
+    font-weight: 700;
+}
+/*<!-- 留言结束 -->*/
+
+
+  /*<!-- 留言反馈详细 -->*/
+#shoeimages {
+    padding: 4px 0 20px;
+    text-align: center;
+}
+.noborder {
+    border: 0 none;
+}
+#shoe_property {
+    background-color: #F1F1F1;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 15px 3px;
+}
+
+#shoe_property th {
+    color: #999999;
+    font-weight: 700;
+    padding-right: 10px;
+    text-align: right;
+    width: 120px;
+}
+#shoe_property th, #shoe_property td {
+    height: 25px;
+    line-height: 25px;
+}
+
+#shoe_property td {
+    color: #1B1B1B;
+    text-align: left;
+    width: 288px;
+}
+#shoe_property th, #shoe_property td {
+    height: 25px;
+    line-height: 25px;
+}
+.tupian img {
+    vertical-align: bottom;
+}
+  /*<!-- 留言反馈详细 结束-->*/
+.prodlist {
+    border: 0 none;
+    padding: 2px 0 20px;
+    text-align: left;
+}
+
+.lttitle {
+    background-color: #402929;
+    border-bottom: 2px solid #E4B7C4;
+    color: #FFFFFF;
+    font: 700 16px/22px 微软雅黑,宋体;
+    height: 22px;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    text-align: left;
+}
+
+.prodlist .prodlistouter {
+    padding: 25px 14px 0;
+    position: relative;
+    width: 762px;
+}
+
+.prodlist a:link, .prodlist a:visited {
+    color: #808080;
+}
+.prodlist a {
+    display: inline-block;
+    margin: 0 14px 15px 0;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+}
+.prodlist a:hover, .prodlist a:hover {
+    color: #fc3398;
+}
+
+.prodlist img {
+    height: 120px;
+    padding: 25px 0;
+    width: 179px;
+}
+
+.prodlist span {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.prodlist b {
+    color: #D10042;
+    cursor: pointer;
+    display: block;
+    font-family: Arial;
+    font-size: 17px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 5px;
+    position: relative;
+    text-align: left;
+}
+
+.prodlist i {
+    color: #999999;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+#usercommentlist {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+/*xia*/
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-image: none;
+    /**/
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+}
+
+#i_ltcomment {
+    background: url("../images/commentbg1.gif") repeat-x scroll 0 -68px rgba(0, 0, 0, 0);
+    height: 85px;
+    padding: 15px 0 15px 30px;
+}
+#i_rate {
+    height: 70px;
+    padding: 15px 0 0;
+    width: 115px;
+}
+#i_rate strong {
+    color: #FF0000;
+    font-family: arial;
+    font-size: 30px;
+    height: 85px;
+    line-height: 36px;
+}
+
+#i_ltcomment div {
+    float: left;
+}
+#i_percent {
+    border-right: 1px dotted #B1B1B1;
+    height: 85px;
+    width: 230px;
+}
+
+#i_percent dl, #i_other dl {
+    float: left;
+    padding: 10px 0 0;
+}
+
+#i_percent dt {
+    color: #979797;
+}
+
+#i_percent .bar, .ltotherinfo .bar {
+    background-color: #F0F0F0;
+    height: 12px;
+    margin-top: 2px;
+    width: 130px;
+}
+#i_percent dd {
+    color: #666666;
+}
+#i_percent .bar div, .ltotherinfo .bar div {
+     background: url("../images/commentbg1.gif") repeat-x scroll 0 -39px rgba(0, 0, 0, 0);
+    height: 12px;
+}
+
+#i_percent dd {
+    color: #666666;
+}
+#i_percent dt, #i_percent dd, #i_other dt, #i_other dd, .ltotherinfo dt, .ltotherinfo dd {
+    float: left;
+    margin: 0 6px 0 0;
+    overflow: hidden;
+}
+#i_other {
+    border-right: 1px dotted #B1B1B1;
+    height: 85px;
+    width: 250px;
+}
+
+#i_other dt {
+    text-align: right;
+    width: 50px;
+}
+#i_other strong {
+    color: #FF0000;
+}
+#i_other dt, #i_other dd {
+    color: #999999;
+}
+#i_other .agree {
+     background: url("../images/commentbg1.gif") no-repeat scroll 0 -26px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;
+}
+#i_btns {
+    color: #999999;
+    height: 70px;
+    padding: 15px 0 0;
+    text-align: center;
+    width: 160px;
+}
+#i_btns p {
+    margin: 10px;
+}
+#i_btns a span, #nocomment a span {
+    background: url("../images/commentbg3.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    width: 80px;
+}
+.ltradio input {
+    cursor: pointer;
+}
+.ltradio .chos {
+    font-weight: 700;
+}
+.ltradio label {
+    color: #404040;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-left: 6px;
+}
+.ltradio i {
+    color: #808080;
+}
+.ltradio {
+    padding: 15px 7px;
+}
+
+#ltcommentlist {
+    padding: 0 20px 20px;
+}
+#ltcommentlist dl {
+    border-bottom: 1px dashed #DBDBDB;
+    padding: 20px 0 10px;
+}
+#ltcommentlist dt {
+    background-color: #FBFBFB;
+    color: #E20B78;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 5px 0 5px 10px;
+    position: relative;
+}
+#ltcommentlist .star {
+    background-position: 0 -13px;
+    display: inline-block;
+    height: 13px;
+    overflow: hidden;
+    width: 65px;
+}
+#ltcommentlist .star span {
+    background: url("../images/commentbg1.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 13px;
+}
+#ltcommentlist .buyinfo {
+    color: #959595;
+    font-family: simsun;
+    padding: 2px 15px 0 0;
+    position: absolute;
+    right: 0;
+}
+#ltcommentlist .buyinfo b {
+    color: #E20B78;
+    font-family: simsun;
+}
+#ltcommentlist .comment {
+    color: #666666;
+    line-height: 18px;
+    padding: 10px 10px 0;
+    word-wrap: break-word;
+}
+#ltcommentlist .sysreply {
+    padding: 15px 10px 0 0;
+    position: relative;
+}
+#ltcommentlist .sysreply .replyinfo {
+    background-color: #FCF4F3;
+    color: #808080;
+    line-height: 25px;
+    padding: 10px 5px 10px 15px;
+    position: relative;
+    width: 550px;
+}
+#ltcommentlist .sysreply .replyinfo .flag {
+     background: url("../images/commentbg1.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: 0 -183px;
+    display: block;
+    height: 6px;
+    left: 30px;
+    position: absolute;
+    top: -6px;
+    width: 13px;
+}
+#ltcommentlist .foucsnum {
+    bottom: 0;
+    color: #999999;
+    padding: 10px 5px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#ltcommentlist .foucsnum a {
+    background: url("../images/focus.gif") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+    color: #1D83C5;
+    line-height: 16px;
+    padding: 2px 0 0 20px;
+}
+#ltcommentlistdown {
+    height: 48px;
+    padding: 0 20px 0 40px;
+    position: relative;
+}
+#usercommentpagedowner {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#cmtitle {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: 0 -480px;
+    background-repeat: repeat-x;
+    border-bottom: 1px dotted #DDDDDD;
+    padding: 20px 12px;
+    position: relative;
+}
+#comment_desc {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: -142px -202px;
+    color: #008CD7;
+    line-height: 30px;
+    padding-left: 35px;
+}
+
+#shoedisplay .tomessage, #cmtitle .tomessage {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 -100px rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 80px;
+}
+#cmtitle .tomessage {
+    right: 12px;
+    top: 24px;
+}
+
+.ltradio .chos {
+    font-weight: 700;
+}
+#cmcontent dl {
+    background: url("../images/dotline.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 16px 36px;
+}
+#cmcontent dd {
+    line-height: 22px;
+}
+.cminfo, .svinfo {
+    color: #999999;
+    text-align: right;
+}
+.cmask {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: -136px -260px;
+    padding: 2px 0 2px 30px;
+}
+.svreply {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: -136px -570px;
+    color: #FC3398;
+    padding: 2px 0 2px 30px;
+}
+.cminfo, .svinfo {
+    color: #999999;
+    text-align: right;
+}
+#listdown {
+    background: url("../images/dotline.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 48px;
+    position: relative;
+}
+#pageupper, #pagedowner {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+#pagedowner {
+    right: 20px;
+    top: 10px;
+}
+#cmiptouter {
+    padding: 25px 25px 12px;
+    position: relative;
+}
+.anchor {
+    display: block;
+    height: 33px;
+}
+#cmupperchos {
+    background-color: #EDF5FB;
+    height: 24px;
+    padding: 8px 12px 0;
+}
+#cmupperchos strong {
+    padding: 0 12px 0 0;
+}
+.gray {
+    color: #AAAAAA;
+}
+.pdl8 {
+    padding: 0 8px;
+}
+.tab_ques {
+    border: 0 none;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.tab_ques th {
+    color: #666666;
+    height: 25px;
+    text-align: left;
+}
+.tab_ques td {
+    color: #666666;
+    height: 25px;
+    text-align: left;
+}
+#cminput {
+    border: 1px solid #999999;
+    color: #999999;
+    font-size: 14px;
+    height: 80px;
+    margin: 10px 0 0 5px;
+    padding: 5px 0 0 5px;
+    width: 726px;
+}
+#needlogin {
+    background: url("../images/sprit_bg02.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: -135px -102px;
+    border: 1px solid #35B6F2;
+    float: right;
+    line-height: 25px;
+    margin-top: 10px;
+    padding: 0 10px 0 32px;
+}
+#quickhelp {
+    color: #DDDDDD;
+    line-height: 32px;
+}
+#needlogin a:link, #needlogin a:visited {
+    color: #008CD7;
+}
+
+#baozhang {
+    font-family: "微软雅黑";
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 700px;
+}

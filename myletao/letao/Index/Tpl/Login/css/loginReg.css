@@ -1,0 +1,202 @@
+#ltlogreg{
+    width: 990px;
+    margin:0 auto;
+    position: relative;
+}
+#ltlogreg .blue_border {
+    border-bottom: 1px solid #DDDDDD;
+    height: 25px;
+    line-height: 25px;
+}
+#ltlogreg .blue_border a{
+	color: #008CD7;
+}
+#ltlogreg .reg_main{
+	padding:60px 20px 50px 90px;
+	overflow: hidden;
+}
+#reg_right {
+    border-left: 1px dotted #DDDDDD;
+    float: right;
+    padding: 0 10px 80px 20px;
+    width: 320px;
+}
+#reg_right h2 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+}
+#reg_right p {
+    color: #999999;
+    line-height: 24px;
+}
+.login_table {
+    padding: 0 0 0 35px;
+    width: 480px;
+}
+.td_left {
+    height: 38px;
+    text-align: right;
+    width: 100px;
+}
+.reg_input {
+    background-color: #FFFFFF;
+    background-position: 0 -1350px;
+    border: 1px solid #999999;
+    float: left;
+    font-family: Verdana,"Courier New","宋体";
+    height: 16px;
+    padding: 4px 0 2px 6px;
+    vertical-align: middle;
+    width: 160px;
+}
+/*表单错误的时候*/
+
+.regInfo {
+    background: url("../images/check_state.gif") no-repeat scroll 20px 20px rgba(0, 0, 0, 0);
+    color: #999999;
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 5px;
+}
+.reg_error {
+    background: url("../images/check_state.gif") no-repeat scroll 0 -19px rgba(0, 0, 0, 0);
+    padding-left: 22px;
+    color: #F60;
+}
+.reg_right {
+    background-position: 0 0;
+    padding-left: 22px;
+}
+.btnblue {
+    background: url("../images/btn_bg2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    top: 1px;
+    width: 80px;
+}
+.login_table h2, .reg_table h2 {
+    border-bottom: 1px solid #EFEFEF;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.part_163 {
+    background-position: 0 -43px;
+}
+.icon {
+    background: url("../images/parterner_icon.gif?v=1") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-right: 1px solid #DBDBDB;
+    display: block;
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 3px;
+    padding-left: 22px;
+    padding-right: 5px;
+}
+.part_ren {
+    background-position: 0 -77px;
+    border: 0 none;
+}
+.reg_table {
+    margin: 50px 50px 50px 150px;
+    padding-left: 90px;
+}
+.btnblue {
+    background: url("../images/btn_bg2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    top: 1px;
+    width: 80px;
+}
+
+
+/*帮助中心时候的css样式*/
+
+.relat {
+    position: relative;
+}
+.center {
+    margin: 0 auto;
+    width: 990px;
+}
+
+#crumbNav {
+    background: url("../images/i.gif") no-repeat scroll 16px center rgba(0, 0, 0, 0);
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 auto;
+    text-indent: 20px;
+    width: 990px;
+}
+
+.pagemain {
+    border: 1px solid #DDDDDD;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 988px;
+    overflow: hidden;
+}
+
+#p_helpleft {
+    float: left;
+    width: 210px;
+}
+
+#p_helpleft h1 {
+    background: url("../images/help.gif") no-repeat scroll 0 -57px rgba(0, 0, 0, 0);
+    color: #3366CC;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-indent: 50px;
+}
+#p_helpleft h2 {
+    background: url("../images/help.gif") no-repeat scroll 0 -140px rgba(0, 0, 0, 0);
+    line-height: 30px;
+    text-indent: 65px;
+    cursor: pointer;
+}
+#p_helpleft .hover{
+    background: url("../images/help.gif") no-repeat scroll 0 0px rgba(0, 0, 0, 0);    
+}
+
+#p_helpleft h3 {
+    border-top: 1px solid #E7EAF0;
+    height: 1px;
+    overflow: hidden;
+    width: 183px;
+}
+
+#p_helpcontentouter {
+    float: left;
+    margin: 0 0 0 10px;
+}
+#helpcontent {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 10px;
+    width: 740px;
+}
+
+
+
+
+
+
+
+
+
+
+/*帮助中心的css样式结束*/

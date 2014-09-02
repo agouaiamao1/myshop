@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>商品列表</title>
+	<hdjs/>
+</head>
+<body>
+	<div class='wrap'>
+		<div class="menu_list"> 
+		  <ul>
+		    <li><a href="{|U:'index'}" class="action"> 商品列表 </a></li>
+		    <li><a href="{|U:'select_cat'}"> 添加商品 </a></li> 
+		  </ul> 
+	    </div>
+	<table class='table2'>
+		<thead>
+			<tr>
+				<td class='w50'>gid</td>
+				<td>商品名称</td>
+				<td class='w100'>商品图片</td>
+				<td class='w150'>操作</td>
+			</tr>
+			</thead>
+			<list from='$goods' name='g'>
+				<tr>
+					<td>{$g.gid}</td>
+					<td>{$g.gname}</td>
+					<td>
+						<img src="__ROOT__/{$g.index_pic}" style="height:80px;width:117px"/>
+					</td>
+					<td>
+						【<a href="{|U:edit,array('cid'=>$g['cid'],'gid'=>$g['gid'])}">修改</a>】|
+						【<a onclick="return confirm('此操作不可恢复！');" href="{|U:del,array('cid'=>$g['cid'],'gid'=>$g['gid'])}">删除</a>】
+					</td>
+				</tr>
+			</list>
+	</table>
+ <div class="page1">
+    {$page}
+</div>
+</div>
+
+</body>
+</html>

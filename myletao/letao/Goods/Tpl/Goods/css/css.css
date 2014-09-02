@@ -1,0 +1,73 @@
+h3{
+	background: #F3FAFE;
+	height:30px;
+	text-indent: 10px;
+	color:#666;
+	line-height: 2em;
+}
+dl{
+	border:solid 1px #dcdcdc;
+		color:#666;
+		line-height: 2em;
+		height:auto;
+		overflow: hidden;
+		padding:6px 0px;
+}
+dl dt{
+	width:120px;
+	float:left;
+	text-indent: 10px;
+	border-right: solid 1px #dcdcdc;
+	margin-right: 8px;
+}
+dl dd{
+	float:left;;
+}
+div#brand ul li{
+	float:left;
+	border:solid 1px #dcdcdc;
+	padding:5px;
+	margin-right:5px;
+}
+
+
+
+div#pic {
+	height:auto;
+	overflow: hidden;
+}
+div#pic div.pic-list{
+	height:auto;
+	overflow: hidden;
+	border-bottom: solid 1px #dcdcdc;
+}
+div#pic div.pic-list ul li{
+	float:left;
+	border:solid 1px #dcdcdc;
+	padding:8px;
+	margin: 10px;
+	position: relative;
+}
+div#pic div.pic-list ul li span{
+	display: block;
+	position: absolute;
+	right: 10px;
+	top:6px;
+	width:15px;
+	height: 15px;
+	overflow: hidden;
+	background: #666;
+	color:#fff;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	cursor: pointer;
+	border:solid 1px #fff;
+}
+div#pic div.set-pic{
+	border-top:solid 1px #dcdcdc;
+}
+
+
+
+

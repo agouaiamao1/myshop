@@ -1,0 +1,117 @@
+<load file="__ROOT__/Public/tpl/header.html"/>
+<title>女单鞋- 女单鞋折扣，上乐淘！</title>
+<js file="__ROOT__/Public/js/goods.js">
+<css file="__CONTROL_TPL__/css/good.css" />
+<load file="__ROOT__/Public/tpl/nav.html"/>
+<style type='text/css'>
+  a.active1{
+    color:red;
+  }
+</style>
+        <!-- 中间商品菜单部分开始 -->
+   	  <div id="ltwrapper" class="ltcenter ltrelat">
+   	  	<div id="good_header">
+   	  		<h1>女鞋</h1>
+   	  		<i class="gray">
+              (共找到<font class="red">260</font>款)
+          </i>
+          <em>
+         <!--     <a href="##">单鞋</a>
+             + -->
+<!--           </em>
+          <em> -->
+            <!--  <a href="##">单鞋</a> -->
+          </em>
+          <span id="resetprop">
+             <a href="##">重置筛选条件</a>
+          </span>          
+   	  	</div>
+   	  	<div id="good_list">
+         <list from="$attr" name='a'> 
+          <p style="">
+                <strong>{$a.attr_name} :</strong>
+                <span style="height:136px">
+                <?php 
+                  echo get_seach_url($hd['list']['a']['index'],0,'全部');
+                 ?>
+               <list from='$a.attr_value' name='v'>
+                 <?php 
+                  echo get_seach_url($hd['list']['a']['index'],$v['avid'],$v['attrvalue']);
+                 ?>
+                 &nbsp;
+                </list>
+               </span>  
+           </p>
+         </list>
+   	  	</div>
+   	
+         <!-- 中间商品菜单部分开始结束 -->
+         <!-- 中间商品列表显示 -->
+      <div id="listcontain">
+        <div id="goodsmain">
+          
+          <div class="goodstab">
+             <span>
+               <a  class="goodtabchos" href="javascript:void">热销</a>
+             </span>
+             <span>
+               <a href="javascript:void">最低价</a>
+             </span>
+             <span>
+               <a href="javascript:void">最低折扣</a>
+             </span>
+             <span>
+               <a href="javascript:void">最新上市</a>
+             </span>
+          </div>
+          <p id="pageupper">
+            {$page}
+          </p>
+        </div>
+         <div id="goods_show">
+
+  <list from='$goods' name='g'>    
+           <li>
+             <a href="##">
+               <img src="__ROOT__/{$g.pic}" alt="" />
+             </a>
+             <p class="pimg">
+               <span class="pname">
+                 <a href="##">{$g.keywords}豹纹 铆钉 Imosii 茉希 秋季潮</a>
+               </span>
+               <span class="pinfo">
+                 <i class="gray">专柜价：</i>
+                 <del>{$g.price}元</del>
+               </span>
+               <span class="pinfo">
+                 <i class="gray">乐淘价：</i>
+                 <i class="ltprice">{$g.st_price}元</i>
+               </span>
+             </p>
+           </li>
+</list>
+         </div>
+      </div>  
+
+
+    <!-- 中间商品列表结束 -->
+   <div id="listdown">
+      <div id="listsns" style="width:230px;padding:5px 0 0 0;"> </div>
+      <p id="pagedowner">
+       {$page}
+      </p>
+   </div>
+   <div id="prop_comb" style="display: block; position: static;">
+     <p id="listhottitle">相关热门推荐<span>TOP RECOMMENDED</span></p>
+     <div>
+       <a title="Imosii单鞋" href="##">Imosii单鞋</a>
+       <a title="Imosii靴子鞋" href="##">Imosii靴子鞋</a>
+       <a title="Imosii鱼嘴鞋" href="##">Imosii鱼嘴鞋</a>
+       <a title="Imosii凉鞋" href="##">Imosii凉鞋</a>
+       <a title="Imosii皮鞋" href="##">Imosii皮鞋</a>
+     </div>
+    </div>
+    <div id="listtitle"> 乐淘网Imosii女鞋频道为你提供最新款式的Imosii女鞋产品，了解Imosii女鞋产品信息，订购让你满意的Imosii女鞋，请上乐淘网。天天特价，7天退换货，让您放心买到便宜鞋。 </div>
+
+    <!-- 乐淘会员帮助页面结束 -->
+<load file="__ROOT__/Public/tpl/footer2.html"/>

@@ -1,0 +1,143 @@
+#carheader{
+	height: 80px;
+	width: 990px;
+	margin:0 auto;
+}
+#carheader .logo{
+	float: left;
+	height: 80px;
+	width: 300px;
+}
+#carheader .userinfo{
+    padding-right: 90px;
+    color: #666666;
+    float: right;
+    height: 22px;
+    line-height: 22px;	
+    padding-top: 34px;
+}
+.clear {
+    clear: both;
+    float: none;
+    height: 0;
+    overflow: hidden;
+}
+#carthead .userinfo a{
+    color: #666666;
+    padding: 0 5px;
+    text-decoration: none;
+}
+#carthead .userinfo a:hover{
+	color: #fc3398;
+}
+#carbody{
+	border-color: #F1047B #EAEAEA #EAEAEA;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    padding: 0 8px 5px;
+    width: 972px;
+    margin: 0 auto;
+}
+#carbody table{
+    margin: 12px 0 0;
+    width: 100%;
+}
+#carbody table thead td{
+    border-color: #F5F5F5;
+    border-style: solid;
+    border-width: 1px 0;
+    color: #666666;
+    height: 16px;
+    line-height: 16px;
+    padding: 6px 0;
+    text-align: center;
+}
+#carbody table tbody tr {
+    height: 72px;
+}
+
+#carbody table tbody td {
+    color: #333333;
+    text-align: center;
+}
+#carbody .prod_image a{
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+}
+#carbody .prod_name {
+    padding: 0 5px;
+    text-align: left;
+}
+#carbody .cart_sub,#carbody .cart_add{
+    background: url("../images/addbuttonsplit.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+}
+#carbody .cart_add{
+	background-position: -16px 0;
+}
+#cartbody .prod_price {
+    color: #FF6636;
+    font-weight: 700;
+}
+#carbody .cart_add:hover{
+	background-position: -16px -16px;
+}
+#carbody .cart_sub:hover{
+	background-position: 0  -16px;
+}
+
+#carbody table tfoot th {
+    border-color: #EAEAEA;
+    border-style: solid;
+    border-width: 1px 0;
+    height: 38px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#carbody .totalcount, #carbody .totalprice, #carbody .realprice {
+    color: #333333;
+    padding-right: 28px;
+}
+
+#carbody .totalcount i, #carbody .totalprice i, #carbody .cuxiaoprice i {
+    color: #008CD7;
+    font-weight: 700;
+    padding: 0 2px;
+}
+#carbody .realprice i {
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: 700;
+}
+#carbody .btnback {
+    margin-right: 10px;
+    color: #333;
+}
+#carbody .btnback:hover{
+	color: #fc3398;
+}
+#carbody .btnback img{
+    margin-right: 3px;
+}
+#goto_buy {
+    background: url("../images/goto2.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: right;
+    height: 44px;
+    width: 146px;
+}
+
+#carbody .btnclear img {
+    margin-right: 5px;
+}
+#carbody table tfoot td {
+    height: 70px;
+    text-align: center;
+}

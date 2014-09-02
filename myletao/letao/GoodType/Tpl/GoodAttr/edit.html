@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>添加属性</title>
+    <hdjs/>
+    <js file="__CONTROL_TPL__/js/js.js"/>
+</head>
+<style>
+    .h{
+        display: none;
+    }
+</style>
+<body>
+    <div class="menu_list"> 
+        <ul>
+            <li><a href="{|U:'index'}"> 属性列表 </a></li>
+            <li><a href="javascript:;" class="action"> 编辑属性 </a></li> 
+        </ul> 
+    </div>
+    <form action="{|U:'attr_edit'}" method='post' class='hd-form' >
+        <input type="hidden" name='gid' value='{$gid}'/>
+        <input type="hidden" name='acid' value='{$data.acid}'/>
+        <input type="hidden" name='avid' value='{$attr.0.avid}'/>
+        <input type="hidden" name='show_type' value='{$data.show_type}'/>
+    	<div class='title-header'>编辑属性</div>
+    	<table class="table1">
+    		<tr>
+    			<th class='w100'>属性名称</th>
+    			<td>
+    				<input type="text" name='attr_name' class='w200' value="{$data.attr_name}"/>
+    			</td>
+    		</tr>
+         <if value="{$data.is_spec} eq '0'">
+            <!--文本框默认值-->
+            <tr id='input'>
+                <th>默认值</th>
+                <td>
+                    <!-- <input type="text" name="attr_value" class="w200" value="{$attr.0.attrvalue}"/> -->
+                     <input type="text" name="attr_value[{$value.0.avid}]" value="{$attr.0.attrvalue}" class="w200"/>
+                </td>
+            </tr>
+        <else/>
+            <!--单选|复选|下拉列表-->
+            <tr id='select'>
+                <th>属性值</th>
+                <td>                   
+                   <ul>
+                    <list from="$attr" name="a"> 
+                     <li>
+                       <input type="text" name="attr_value[id_{$a.avid}]" class="w200" value="{$a.attrvalue}"/>
+                       <if value='$hd.list.a.first'>
+                          <button class='hd-cancel' type="button" onclick='add_field()'>添加</button>
+                       <else>
+                          <button class="hd-cancel" onclick="remove_field(this)" type="button">移除 </button>
+                       </if>
+                     </li>
+                   </list>
+                   </ul>
+                </td>
+            </tr>
+        </if>
+    	</table>
+			<div class='position-bottom'>
+				<input type="submit" value="确定" class="hd-success"/>
+        <input type="reset" value="重置" class="hd-success"/>
+			</div>
+    </form>
+</body>
+<script type="text/javascript">
+   function add_field(){
+    var html='<li>\
+               <input type="text" name="attr_value[]" class="w200"/>\
+               <button type="button" class="hd-cancel" onclick="remove_field(this)">移除\
+               </button>';
+  $("tr#select td ul").append(html);
+}
+   function remove_field(obj){
+       $(obj).parent().remove();
+}   
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

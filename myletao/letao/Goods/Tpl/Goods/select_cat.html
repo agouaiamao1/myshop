@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>选择商品栏目</title>
+	<hdjs/>
+	<js file='__CONTROL_TPL__/js/js.js'/>
+</head>
+<style>
+	select#ads{
+	   display:none;
+	}
+</style>
+<body>
+	<div class='wrap'>
+		<form action="{|U:add}">
+	<div class='title-header'>选商品栏目</div>
+	<table class='table1 hd-form' >
+		<tr>
+	<th class='w100'>商品栏目</th>
+	<td>
+		<select name="cid" size="10">
+		<list from='$category' name='c'>
+			<option value="{$c.cid}">{$c.cname}</option>
+		</list>
+	    </select>
+	    <select id="ads" name="cid" size='10' class="hidden"></select>
+	</td>
+	</tr>
+	</table>
+	<div class='position-bottom'>
+		<input type="submit" value="确定" class='hd-success' />
+	</div>
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

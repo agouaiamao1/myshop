@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>修改密码</title>
+    <hdjs>
+    <js file="__CONTROL_TPL__/js/js.js"/>
+</head>
+<body>
+<div class="wrap hd-form">
+    <h2>修改密码</h2>
+    <form action="{|U:'change_pass'}" method="post" onsubmit="return false;" class="form-inline hd-form">
+        <table class="table1">
+            <tr>
+                <th class="w100">管理员名称</th>
+                <td>
+                    {$user.admin}
+                    <input type="hidden" name = 'aid' value="{$user.aid}"/>
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">旧密码</th>
+                <td>
+                    <input type="password" name="old_password" class="w200"/>
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">新密码</th>
+                <td>
+                    <input type="password" name="password" class="w200"/>
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">重复新密码</th>
+                <td>
+                    <input type="password" name="c_password" class="w200"/>
+                </td>
+            </tr>
+        </table>
+        <div class="btn_wrap">
+            <input type="submit" class="btn1" value="确定"/>
+            <input type="reset" class="btn1" value="重置"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

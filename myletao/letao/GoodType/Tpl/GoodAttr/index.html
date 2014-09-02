@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>属性列表</title>
+    <hdjs/>
+</head>
+<js file="__CONTROL_TPL__/js/del.js"/>
+<body>
+    <div class="menu_list"> 
+        <ul>
+            <li><a href="javascript:;" class="action"> 属性列表 </a></li>
+            <li><a href="{|U:'attr_add',array('gid'=>$gid)}"> 添加属性 </a></li> 
+        </ul> 
+    </div>
+    <table class='table2'>
+        <thead>
+            <tr>
+                <td class='w50'>acid</td>
+                <td>属性名称</td>
+                <td class='w100'>显示类型</td>
+                <td class='w100'>是否规格</td>
+                <td class='w150'>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <list from='$attr' name='a'>
+                <tr>
+                    <td>{$a.acid}</td>
+                    <td>{$a.attr_name}</td>
+                    <td>{$a.type}</td>
+                    <if value="{$a.is_spec eq 1}">
+                       <td>是</td>
+                    <else/>
+                       <td>否</td>
+                    </if>
+                    <td>
+                        【<a href="{|U:'attr_edit', array('acid'=>$a['acid'],'gid'=>$gid)}">编辑</a>】 |
+                        <!-- 【<a href="{|U:'attr_del', array('acid'=>$a['acid'],'gid'=>$gid)}">删除</a>】  -->
+                        【<a style="cursor:pointer" onclick = "attr_del({$a['acid']})" >删除</a>】 
+                    </td>
+                </tr>
+            </list>
+        </tbody>
+    </table>
+</body>
+</html>

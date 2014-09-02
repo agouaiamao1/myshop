@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>添加栏目</title>
+    <hdjs/>
+    <css file='__CONTROL_TPL__/css/css.css'/>
+    <js file='__CONTROL_TPL__/JS/js.js'/>
+</head>
+<body>
+<div class="warp">
+    <form action="__METH__" method="post" class="hd-form" enctype="multipart/form-data">
+        <div class="tab">
+            <ul class="tab_menu">
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="tab_content">
+                <div id="base">
+                    <table class="table1">
+                       <tr>
+                         <td class='w100'>网站名称</td>
+                          <td>
+                             <input type='text' name='webname' class='w200' value=''/>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td class='w100'>网址</td>
+                          <td>
+                             <input type='text' name='url' class='w200' value=''/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='w100'>logo</td>
+                          <td>
+                              <input type="file" name="logo"/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='w100'>状态</td>
+                          <td>
+                             <input type="radio" value="1" name="status"/> 显示
+                             <input type="radio" value="0" name="status"/> 未显示
+                          </td>
+                        </tr>                        
+
+                    </table>
+                </div>
+            </div>
+            <input type="submit" class="hd-success" value="确定"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

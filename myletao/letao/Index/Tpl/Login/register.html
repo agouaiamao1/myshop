@@ -1,0 +1,68 @@
+<load file="__ROOT__/Public/tpl/header.html"/>
+ <title>注册乐淘账号</title>
+<link rel="stylesheet" href="__CONTROL_TPL__/css/loginReg.css" />
+<script type="text/javascript" src="__CONTROL_TPL__/js/register.js"></script>
+<load file="__ROOT__/Public/tpl/nav.html"/>
+  <!-- 乐淘账号注册开始 -->
+ <div id="ltlogreg" class="center relat">
+   <div id="ltlinknav" class="blue_border">
+      <a href="/">首页</a> 》 注册
+   </div>
+   <div style=" text-align:right; height:25px; line-height:25px; padding-right:10px">
+      已有乐淘帐号？请点 
+      <a title="登录" href="{|U('Login/login')}" style="color:#008CD7">这里</a> 登录
+   </div>
+   
+   <div class="reg_table">
+    <form action="{|U('Login/reg')}" method='post' name='register'>
+     <table width="500px">
+     	<tbody>
+
+     		<tr>
+              <td class="td_left">帐号名：</td>
+              <td>
+               <input id="txtUserName" class="reg_input" name="username">
+               <span class="regInfo">(用户名6-32字母,数字,下划线)</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td_left">密  码：</td>
+              <td>
+                 <input id="txtPwd" class="reg_input" type="password" name="pwd">
+                 <span class="regInfo">(密码 3-25位 区分大小写)</span>
+              </td>
+           </tr>
+
+           <tr>
+             <td class="td_left">再次输入密码：</td>
+             <td>
+                <input id="txtRePwd" class="reg_input" type="password" name="pwded">
+                <span class="regInfo">(密码 3-25位 区分大小写)</span>
+             </td>
+          </tr>
+          <tr>
+            <td style=" text-align:right">
+               <input id="protocol" type="checkbox" checked="checked">
+            </td>
+            <td>
+              我已阅读并同意
+              <a target="_blank" href="##" style="color:#008CD7">《乐淘服务协议》</a>
+              <br>
+            </td>
+           </tr>
+           <tr>
+            <td class="td_left"> </td>
+            <td>
+              <input id="btn_reg" class="btnblue" type="submit" value="注 册">
+            </td>
+           </tr>
+     	</tbody>
+     </table>
+     </form>
+   </div>
+<!--   乐淘账号注册开始  结束 -->
+<load file="__ROOT__/Public/tpl/footer2.html"/>
+ </div>
+</body>
+</html>
